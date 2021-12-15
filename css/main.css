@@ -4241,9 +4241,10 @@ div.wpcf7-acceptance-missing {
 .slider__parh {
     text-align: center;
     padding: 0px 30px;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 0px;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.418);
 }
 
 @media (min-width: 992px) {
@@ -7224,7 +7225,7 @@ h6 {
 
 h1,
 .h1 {
-    font-size: calc(var(--h1-min-font-size) * 1px);
+    font-size: calc(var(--h1-min-font-size) * 0.9px);
     font-weight: normal;
     line-height: var(--h1-line-height);
     color: var(--h1-color-dark)

@@ -2030,7 +2030,12 @@ a:hover {
 .testimonial-client-avatar {
     width: calc(1 * (120 * 1px));
     height: calc(1 * (120 * 1px));
-    border-radius: 100%
+    border-radius: 100%;
+    box-shadow: 1px 1px 35px 2px #424242
+}
+
+.testimonial-figure {
+    padding-top: 47px;
 }
 
 @media screen and (min-width: 320px) {
@@ -4449,7 +4454,17 @@ div.wpcf7-acceptance-missing {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
+}
+
+.prject [data-arts-parallax]>div {
+    padding-bottom: 66.66% !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .prject [data-arts-parallax]>div {
+        padding-bottom: 60.66% !important;
+    }
 }
 
 [data-scroll-speed='-1.1'] .lazy-bg,
@@ -12086,15 +12101,20 @@ small,
     position: relative;
 }
 
-.action .section-demo__wrapper-button_left {
+.action-icon {
     position: fixed;
-    left: 0;
+    right: 0;
+    left: unset;
     bottom: 0;
     top: 780px;
 }
 
-
-/* Form */
+.sub {
+    font-size: calc(var(--h2-min-font-size) * 0.8px + (var(--h2-max-font-size) - var(--h2-min-font-size)) * ((100vw - 320px) / 2240));
+    font-weight: normal;
+    font-family: 'Cinzel';
+    line-height: var(--h2-line-height);
+}
 
 
 /* contact */

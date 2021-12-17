@@ -12425,6 +12425,9 @@ small,
         left: -12px;
         right: 0;
     }
+    .Hide {
+        left: -4px !important;
+    }
     .header__burger {
         right: 5px;
     }

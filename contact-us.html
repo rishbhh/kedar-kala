@@ -544,7 +544,7 @@
                                     <!-- submit -->
                                     <div class="row form__row">
                                         <div class="col form__col form__col_submit">
-                                            <button class="button button-solid button-black button_fullwidth" data-hover="Send Message"><span class="buttons-label-hover">Send Message</span></button>
+                                            <button class="button button-solid button-black button_fullwidth" data-hover="Send Message"><span class="buttons-label-hover" type="submit">Send Message</span></button>
                                         </div>
                                     </div>
                                     <!-- - submit -->
@@ -766,17 +766,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script src="js/components.js"></script>
+    <script>
+        $(function() {
 
-  </div>
+            $('form').on('submit', function(e) {
+
+                e.preventDefault();
+
+                $.ajax({
+                    type: 'post',
+                    url: 'post.php',
+                    data: $('form').serialize(),
+                    success: function() {
+                        alert('form was submitted');
+                    }
+                });
+
+            });
+
+        });
+    </script>
+    </div>
 
 
 
-        <!-- form -->
-        <!-- click -->
-        <a href="https://api.whatsapp.com/send?phone=8368657182&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-            <i class="fa fa-whatsapp my-float"></i>
-        </a>
-        <!-- - COMPONENTS -->
+    <!-- form -->
+    <!-- click -->
+
+    <!-- - COMPONENTS -->
 
 </body>
 

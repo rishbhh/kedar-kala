@@ -6113,24 +6113,7 @@
         y: 1
     })
 
-    // pop Form
-
-    var ClickForm = new TimelineMax({ paused: true });
-
-    ClickForm.to(".form-container", 1, {
-        bottom: 0,
-        ease: Expo.easeInOut,
-    });
-
-    ClickForm.staggerFrom(".frm", 0.5, { y: 100, opacity: 0, duration: 0.5, ease: 'power2.In' }, "-=0.3");
-
-    ClickForm.reverse();
-    $(document).on("click", ".action-icon a", function() {
-        ClickForm.reversed(!ClickForm.reversed());
-    });
-    $(document).on("click", ".form-close", function() {
-        ClickForm.reversed(!ClickForm.reversed());
-    });
+    // po
 
 
 
